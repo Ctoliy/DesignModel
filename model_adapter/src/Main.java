@@ -17,10 +17,10 @@ public class Main {
         System.out.println("vga" + vga.outVga());
         //2、基于对象适配器模式
         //hdmi转dvi
-        Dvi dvi1 = new Hdmi2DviOrVgas(new Hdmi2DviOrVga());
+        Dvi dvi1 = new Hdmi2DviOrVgas(new HdmiImpl());
         System.out.println("dvi1" + dvi1.outDvi());
         //hdmi转vga
-        Vga vga1 = new Hdmi2DviOrVgas(new Hdmi2DviOrVga());
+        Vga vga1 = new Hdmi2DviOrVgas(new HdmiImpl());
         System.out.println("vga1" + vga1.outVga());
         //3、基于接口适配器模式
         //hdmi转dvi
